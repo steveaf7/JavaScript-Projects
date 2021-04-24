@@ -37,7 +37,7 @@ function negation() {
 function random() {
     document.getElementById("random").innerHTML = Math.random() * 10000;
 }
-var g = 1
+var g = 1 //put this variable outside the function so every time it's clicked it adds one again. If you put it inside the function it will redefine g as 1 every time the function runs
 function incrementThis() {
     g++;
     document.getElementById("increment").innerHTML = g;
@@ -48,4 +48,4 @@ function decrementThis() {
     document.getElementById("decrement").innerHTML = h;
 }
 
-document.write("the square root of 144 is " + Math.sqrt(144))
+document.write("the square root of 144 is " + Math.sqrt(144))// write string and result of Math.sqrt(144) to the page
