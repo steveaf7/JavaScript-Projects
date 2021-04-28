@@ -16,7 +16,7 @@ body {
   display: none;
 }
 
-#first {
+#first { //so the first picture will display upon loading
     display: block;
 }
 
