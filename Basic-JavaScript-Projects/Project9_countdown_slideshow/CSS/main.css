@@ -16,10 +16,6 @@ body {
   display: none;
 }
 
-#first { //so the first picture will display upon loading
-    display: block;
-}
-
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
