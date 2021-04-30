@@ -13,7 +13,7 @@ function placeXOrO(squareNumber) {
         let select = document.getElementById(squareNumber);
         //This condition checks who's turn it is.
         if (activePlayer === 'X') {
-            //If activePlayer is equal to 'X', the x.png is placed in HTML.
+            //If activePlayer is equal to 'X', the x.jpg is placed in HTML.
             select.style.backgroundImage = 'url("images/x.jpg")';
             //Active player may only be 'X' or 'O' so, if not 'X' it must be 'O'
         } else {
@@ -23,8 +23,9 @@ function placeXOrO(squareNumber) {
         //squareNumber and activePlayer are concatenated together and added to array.
         selectedSquares.push(squareNumber + activePlayer);
         //This calls a function to check for any win conditions.
-        checkWinConditions();
-        if (activePlayer === 'X') {
+        checkWinConditions(); 
+        //this changes the active player after the turn.
+        if (activePlayer === 'X') { //if player was x player is now o and vice versa.
             activePlayer = 'O';
         } else {
             activePlayer = 'X';
@@ -50,7 +51,7 @@ function placeXOrO(squareNumber) {
         let pickASquare;
         //This condition allows our while loop to keep trying if a square is selected already.
         while(!success) {
-            //A random number between 0 and 8 is selected.
+            //A random number between 0 and 8 is selected and converted to a string.
             pickASquare = String(Math.floor(Math.random() * 9));
             //If the random number evaluated returns true, the square hasn't been selecteed yet.
             if (placeXOrO(pickASquare)){
