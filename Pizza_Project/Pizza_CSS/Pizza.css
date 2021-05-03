@@ -1,9 +1,11 @@
+
 body {
     background-color: white;
 }
 h1 {
     font-family: Bradley Hand, cursive;
     color: rgb(182, 2, 2);
+    text-align: center;
 }
 h3 {
     font-family: Bradley Hand, cursive;
@@ -15,14 +17,14 @@ div {
     color: rgb(182, 2, 2);
 }
 #menuBG {
-    width:400px;
+    width: 500px;
     height:470px;
     margin:10px auto;
 }
 
 #frmMenu {
-    width:400px;
-    height:220px;
+    width:600px;
+    height:220px; /* salami button won't click if height is less that this */
 }
 #totalPrice {
     width:200px;
@@ -35,6 +37,12 @@ div {
     height:220px;
     float:left;
 }
+.middle { /* Veggies section */
+    width:200px;
+    height:220px;
+    float:left; /* without this, will print on the next line. */
+}
+
 .right {
     width:200px;
     height:220px;
@@ -51,8 +59,16 @@ div {
     width:400px;
     height:200px;
 }
-#btnOrder {
+#btnOrder { /* place order button */
     margin:10px 0px 0px 100px;
     width:100px;
     height:40px;
+    display: block;
+    margin: 25px auto; /*centers the button*/
+    border: 2px solid rgb(182, 2, 2);
+    background-color: green;
+    border-radius: 8px;
+    color: whitesmoke;
+    font-weight:700;
+
 }
