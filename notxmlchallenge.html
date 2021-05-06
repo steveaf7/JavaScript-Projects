@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="XML_Example"></p>
+    <script>
+    var XML_Parser, XML_Document;
+
+    //creates a txt string
+    var Song = "<song>" + "<title>Desert Run</title>" +
+        "<guitars>Stephen Blanding</guitars>" + "<bass>Jeremy Robertson</bass>" + "<drums>Steven Fralix</drums>"+"<songwriter>Stephen Blanding</songwriter>"     
+        + "<year>2007</year>" + "<length>5 minutes</length>" + "</song>";
+    //creates an XML DOM parser
+    XML_Parser = new DOMParser();
+
+    //creates a new XML DOM object using the text string
+    XML_Document = XML_Parser.parseFromString(Song, "text/xml");
+
+    document.getElementById("XML_Example").innerHTML = 
+    XML_Document.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+
+    </script>
+
+    </body>
+</html>

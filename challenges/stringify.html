@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <p id="myDrums"></p>
+
+        <script>
+            var drumset = {cymbals: "Zildjian", drums: "Pearl", drumcolor: "Blue", pedal: "Demon Drive"}
+            var JSONstring = JSON.stringify(drumset);
+            document.getElementById("myDrums").innerHTML = JSONstring;
+        </script>
+    </body>
+</html>

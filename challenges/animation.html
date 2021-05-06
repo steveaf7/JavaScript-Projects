@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            div {
+                width: 100px;
+                height: 200px;
+                background-color: aqua;
+                position:relative;
+                animation: upanddown 3s infinite;
+            }
+            
+            p {
+                width: 200px;
+                height: 100px;
+                position: relative;
+                animation: multiple 5s infinite;
+            }
+
+            @keyframes upanddown {
+                from {top:0px;}
+                to {top:300px;}
+            }
+
+            @keyframes multiple {
+                0% {top: 300px; background: blanchedalmond;}
+                100% {top: 0px; background: black;}
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Animation examples</h1>
+        <div></div>
+        <p>Animation</p>
+    </body>
+</html>

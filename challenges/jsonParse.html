@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <p id="myDrums"></p>
+
+        <script>
+            var JSONstring = '{"cymbals":"Zildjian", "drums":"Pearl", "drumcolor":"Blue", "pedal":"Demon Drive"}';
+            var drumset = JSON.parse(JSONstring);
+            console.log(drumset);
+            document.getElementById("myDrums").innerHTML = "Steve uses a " + drumset.drumcolor + " " + drumset.drums + " kit and " + drumset.cymbals + " cymbals.";
+        </script>
+    </body>
+
+
+</html>
