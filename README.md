@@ -1,5 +1,4 @@
-# JavaScript-Projects
-This is a repository for the projects made during the Tech Academy JavaScript course
+# JavaScript-Projects 
 
 ### Projects
 [Pizza Menu](https://github.com/steveaf7/JavaScript-Projects/tree/main/Pizza_Project)<br>
